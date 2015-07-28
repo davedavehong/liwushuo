@@ -126,10 +126,6 @@ li.nav-top-link {
   z-index: 111111;
 }
 
-.header li {
-  display: inline-block;
-}
-
 .nav-top-link:hover a{
   background-color: #E32F2F;
 }
