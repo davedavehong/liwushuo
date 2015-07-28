@@ -183,6 +183,7 @@ li.nav-top-link {
 .banner-wrap {
   background: url(../images/bg_banner_home.jpg) no-repeat center 0;
   height: 450px;
+  background-size: cover;
 }
 
 .wrapper {
