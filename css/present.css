@@ -137,14 +137,12 @@ li.nav-top-link {
   width: 7px;
   height: 4px;
   vertical-align: middle;
-  margin-top: 0;
   position: relative;
   left: 5px;
 }
 
 .nav-top-link:hover>ul {
   display: block;
-  opacity: 1;
 }
 
 .nav-top-link ul {
