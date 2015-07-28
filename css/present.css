@@ -15,7 +15,6 @@
 
 .header a.title {
   display: block;
-  float: left;
   background: url("../images/logo_liwu.png");
   width: 260px;
   height: 30px;
@@ -23,7 +22,6 @@
 
 .header form {
   position: relative;
-  float: right;
 }
 
 .header input {
