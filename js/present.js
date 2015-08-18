@@ -109,7 +109,6 @@ function slideShow(id, t) {//每t秒运行一次
                 obj.style.display = 'block';
             }
             setOpacity(obj, 0);
-            obj.style.zIndex = 1;
             if (!timeLimit) {
                 timeLimit = 200;
             }
@@ -131,7 +130,6 @@ function slideShow(id, t) {//每t秒运行一次
                 timeLimit = 200;
             }
             setOpacity(obj, 1);
-            obj.style.zIndex = 0;
             var opacity = 1,
                 step = timeLimit / 10;
             var fadeOutTime = setTimeout(function () {
