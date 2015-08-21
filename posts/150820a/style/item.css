@@ -1,0 +1,13 @@
+.main-content {
+  margin: 50px auto 0 auto;
+  width: 980px;
+  position: relative; }
+  .main-content .content-left {
+    width: 600px; }
+    .main-content .content-left .wrapper-cover {
+      width: 100%;
+      margin-bottom: 22px; }
+      .main-content .content-left .wrapper-cover img {
+        width: 100%; }
+
+/*# sourceMappingURL=item.css.map */

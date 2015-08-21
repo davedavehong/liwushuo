@@ -1,0 +1,16 @@
+$view-width: 980px;
+.main-content{
+  margin: 50px auto 0 auto;
+  width: 980px;
+  position: relative;
+  .content-left{
+    width: 600px;
+    .wrapper-cover{
+      width: 100%;
+      margin-bottom: 22px;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
