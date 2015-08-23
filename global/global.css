@@ -69,7 +69,7 @@ ul {
     top: 2px;
 }
 
-.header-right a {
+.header-right {
     border: solid 1px #d9d9d9;
     width: 100px;
     height: 36px;
@@ -77,9 +77,10 @@ ul {
     line-height: 36px;
     background-color: #f9f9f9;
     display: block;
+    cursor: pointer;
 }
 
-.header-right a:hover {
+.header-right:hover {
     background-color: #fff;
 }
 

@@ -264,4 +264,22 @@ form.comment-box label {
   z-index: 111111;
   background: rgba(0, 0, 0, 0.5); }
 
+#weixin-modal {
+  padding: 58px 93px 38px;
+  width: 225px;
+  text-align: center; }
+  #weixin-modal #code {
+    height: 142px;
+    margin-bottom: 38px; }
+
+.modal {
+  top: 0;
+  position: fixed;
+  z-index: 111111;
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3); }
+
 /*# sourceMappingURL=item.css.map */

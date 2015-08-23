@@ -6,6 +6,9 @@
     <link href="../../global/global.css" rel="stylesheet">
     <link href="http://elephstor.com/images/elephstor.ico" rel="shortcut icon"/>
     <link href="style/item.css" rel="stylesheet">
+    <script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="http://cdn.bootcss.com/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+    <script src="javascript/post_jquery.js"></script>
 </head>
 <body>
 <div class="header-wraper">
@@ -17,7 +20,7 @@
             <label for="search-input">搜 索</label>
         </form>
 
-        <div class="header-right"><a href="">登陆/注册</a></div>
+        <div class="header-right">登陆/注册</div>
     </div>
     <div class="header-nav">
         <ul>
@@ -207,5 +210,11 @@
     <p>地址：北京市海淀区海淀大街3号中关村西区II区鼎好电子大厦A座8层801室 电话：010-58409527</p>
 </div>
 <div class="modal-backdrop"></div>
+<div class="modal" id="weixin-modal">
+    <div id="code"></div>
+    <p>使用微信扫描上方二维码</p>
+
+    <p>打开网页后点击右上角分享按钮</p>
+</div>
 </body>
 </html>

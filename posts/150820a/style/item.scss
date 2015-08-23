@@ -29,7 +29,7 @@ $main-color: #f84e4e;
   }
   .content-right {
     float: right;
-    a{
+    a {
       display: block;
       width: 310px;
       height: 200px;
@@ -283,7 +283,8 @@ form.comment-box {
     cursor: pointer;
   }
 }
-.back-top-post{
+
+.back-top-post {
   position: fixed;
   left: 50%;
   margin-left: 200px;
@@ -292,22 +293,23 @@ form.comment-box {
   display: block;
   width: 163px;
   height: 353px;
-  .qr-code{
+  .qr-code {
     width: 165px;
     height: 284px;
     background: url("../img/detail_z.png") 0 -576px;
   }
-  .bt-button{
+  .bt-button {
     width: 61px;
     height: 60px;
     margin-left: 54px;
     background: url("../img/detail_z.png") -104px -863px;
-    &:hover{
+    &:hover {
       background-position: -104px -926px;
     }
   }
 }
-.modal-backdrop{
+
+.modal-backdrop {
   position: fixed;
   display: none;
   top: 0;
@@ -315,5 +317,26 @@ form.comment-box {
   bottom: 0;
   left: 0;
   z-index: 111111;
-  background: rgba(0,0,0,.5);
+  background: rgba(0, 0, 0, .5);
+}
+
+#weixin-modal {
+  padding: 58px 93px 38px;
+  width: 225px;
+  text-align: center;
+  #code{
+    height: 142px;
+    margin-bottom: 38px;
+  }
+}
+
+.modal {
+  top:0;
+  position: fixed;
+  z-index: 111111;
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 3px 7px rgba(0,0,0,.3);
+  -moz-box-shadow: 0 3px 7px rgba(0,0,0,.3);
+  box-shadow: 0 3px 7px rgba(0,0,0,.3);
 }
