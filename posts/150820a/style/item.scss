@@ -1,16 +1,319 @@
 $view-width: 980px;
-.main-content{
-  margin: 50px auto 0 auto;
-  width: 980px;
+$main-color: #f84e4e;
+@mixin post-info-icon {
+  content: "";
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  vertical-align: middle;
   position: relative;
-  .content-left{
+  left: -5px;
+  top: -2px;
+}
+
+.main-content {
+  margin: 50px auto 0 auto;
+  width: $view-width;
+  position: relative;
+  overflow: hidden;
+  .content-left {
     width: 600px;
-    .wrapper-cover{
+    float: left;
+    .wrapper-cover {
       width: 100%;
       margin-bottom: 22px;
-      img{
+      img {
         width: 100%;
       }
     }
   }
+  .content-right {
+    float: right;
+    a{
+      display: block;
+      width: 310px;
+      height: 200px;
+      background: url("../img/post_banner.png");
+    }
+  }
+}
+
+.post {
+  h1.title {
+    color: #2f323b;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 26px;
+    line-height: 40px;
+  }
+}
+
+ul.td-post-info {
+  overflow: hidden;
+  border-bottom: 1px solid #e0e0e0;
+  li {
+    float: left;
+    margin: 5px 25px 5px 0;
+
+    span {
+      padding-left: 10px;
+      font-size: 14px;
+      color: #333;
+    }
+    .info-like:before {
+      @include post-info-icon;
+      background: url("../img/detail_z.png") -146px -346px;
+    }
+    .info-comment:before {
+      @include post-info-icon;
+      background: url("../img/detail_z.png") -146px -405px;
+    }
+    .info-share:before {
+      @include post-info-icon;
+      background: url("../img/detail_z.png") -146px -387px;
+    }
+    &:last-child {
+      float: right;
+      margin-right: 0;
+      .info-data {
+        font-size: 14px;
+        color: #777e83;
+      }
+    }
+  }
+  .share-list {
+    color: #923;
+    display: inline-flex;
+    span {
+      margin: auto 18px;
+    }
+    ul {
+
+      li {
+        width: 34px;
+        height: 34px;
+        cursor: pointer;
+        background: url("../img/detail_z.png");
+      }
+      .share-qq {
+        background-position: -131px -502px;
+      }
+      .share-weibo {
+        background-position: -131px -539px;
+      }
+      .share-qzone {
+        background-position: -131px -465px;
+      }
+      .share-wechat {
+        background-position: -131px -428px;
+      }
+    }
+  }
+}
+
+.content {
+  margin-top: 30px;
+  word-wrap: break-word;
+  font-size: 16px;
+  color: #333;
+  line-height: 31px;
+  h2 {
+    line-height: 1.6;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 20px 0;
+    font-size: 19px !important;
+    font-weight: 400 !important;
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  h3 {
+    margin: 10px 0;
+    .item-serial {
+      width: 24px;
+      height: 24px;
+      background: #f96e57;
+      font-size: 14px;
+      line-height: 24px;
+      text-align: center;
+      border-radius: 50%;
+      color: #fff;
+      display: inline-block;
+      position: relative;
+      top: -3px;
+    }
+    .item-title {
+      margin-left: 20px;
+      letter-spacing: 2px;
+    }
+  }
+  p img {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .item-info {
+    line-height: 1.5;
+    padding-left: 11px;
+    position: relative;
+    border-left: 4px solid #d8d8d8;
+    margin-bottom: 30px;
+    .item-price {
+      color: $main-color;
+    }
+    .item-like {
+      font-size: 14px;
+      color: #8e8e93;
+    }
+    a {
+      display: block;
+      position: absolute;
+      color: $main-color;
+      margin-top: -40px;
+      margin-left: 150px;
+      border-radius: 32px;
+      border: solid thin #ff897d;
+      width: 100px;
+      text-align: center;
+      height: 32px;
+      line-height: 32px;
+    }
+  }
+}
+
+.post-comment {
+  h3 {
+    margin: 40px 50px 5px 0;
+    font-weight: 400;
+  }
+  ul.post-comment {
+    li {
+      padding-top: 20px;
+      a.avatar {
+        display: inline-block;
+        height: 48px;
+        width: 48px;
+        img {
+          width: 48px;
+          height: 48px;
+          border-radius: 50%;
+        }
+      }
+      div.content-body {
+        display: inline-block;
+        margin-left: 2%;
+        padding-bottom: 14px;
+        border-bottom: solid #e0e0e0 1px;
+        font-size: 14px;
+        width: 534px;
+        color: rgba(0, 0, 0, .3);
+        div.comment-content {
+          margin-bottom: 5px;
+          color: #333;
+          font-size: 16px;
+
+        }
+        div.user-name {
+          display: inline-block;
+          margin-right: 30px;
+          line-height: 24px;
+
+          height: 24px;
+          max-width: 240px;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        div.post-time {
+          display: inline-block;
+          width: 120px;
+          line-height: 24px;
+          height: 24px;
+        }
+        a.reply {
+          font-size: 14px;
+          display: none;
+          color: rgba(0, 0, 0, .3);
+        }
+        &:hover a.reply {
+          display: inline-block;
+        }
+      }
+    }
+  }
+  .load-tip {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    margin: 30px 0 50px;
+    text-align: center;
+    border: solid #dedede thin;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #8e8e93;
+  }
+}
+
+form.comment-box {
+  textarea {
+    width: 100%;
+    border-radius: 6px;
+    border: solid #c8c7cc 1px;
+    height: 100px;
+    margin-top: 18px;
+    padding: 10px;
+    box-sizing: border-box;
+    resize: none;
+    outline: 0;
+    font: inherit;
+  }
+  label {
+    height: 32px;
+    line-height: 32px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #fff;
+    border: solid thin $main-color;
+    text-align: center;
+    width: 88px;
+    border-radius: 32px;
+    float: right;
+    color: $main-color;
+    font-size: 16px;
+    cursor: pointer;
+  }
+}
+.back-top-post{
+  position: fixed;
+  left: 50%;
+  margin-left: 200px;
+  bottom: 75px;
+  z-index: 100;
+  display: block;
+  width: 163px;
+  height: 353px;
+  .qr-code{
+    width: 165px;
+    height: 284px;
+    background: url("../img/detail_z.png") 0 -576px;
+  }
+  .bt-button{
+    width: 61px;
+    height: 60px;
+    margin-left: 54px;
+    background: url("../img/detail_z.png") -104px -863px;
+    &:hover{
+      background-position: -104px -926px;
+    }
+  }
+}
+.modal-backdrop{
+  position: fixed;
+  display: none;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 111111;
+  background: rgba(0,0,0,.5);
 }

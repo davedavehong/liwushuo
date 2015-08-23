@@ -1,11 +1,13 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: "Open Sans", "Hiragino Sans GB", "Microsoft YaHei", "Î¢ÈíÑÅºÚ", STHeiti, "WenQuanYi Micro Hei", Dengxian, Arial, SimSun, sans-serif;
 }
 
 body {
+    font-size: 16px;
+    color: #333;
     background-color: #f7f8f9;
+    font-family: "Open Sans", "Hiragino Sans GB", "Microsoft YaHei", "Î¢ÈíÑÅºÚ", STHeiti, "WenQuanYi Micro Hei", Dengxian, Arial, SimSun, sans-serif;
 }
 
 a {
@@ -45,13 +47,13 @@ ul {
 .header input {
     border: solid #f84e4e 2px;
     width: 294px;
-    font-size: 16px;
     line-height: 32px;
     height: 32px;
     background: url("../images/icon_search.png") no-repeat #fff 10px;
     padding: 0 40px;
     outline: none;
     border-radius: 4px;
+    font: inherit;
 }
 
 .header label {
