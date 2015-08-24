@@ -4,7 +4,7 @@
 var bSys = true;
 var backTimer = null;
 window.onload = function () {
-    backTotop();
+    backToTop();
     navFix();
     setLinksTarget();
     setItemIMG();
@@ -29,21 +29,18 @@ var itemImgLinks = [
 ];
 function navFix() {
     var header_fix = document.getElementsByClassName('header-margin-fix')[0];
-    var backBottom = document.getElementsByClassName('backTotop')[0];
-    var header_cont = document.getElementsByClassName('header')[0];
+    var backBottom = document.getElementsByClassName('backToTop')[0];
     var header_nav = document.getElementsByClassName('header-nav')[0];
     var nav_searchBox = document.getElementsByClassName('nav-searchBox')[0];
     var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
     if (scrollTop >= 240) {
         backBottom.style.display = 'block';
-        header_fix.style.paddingTop = '124px';
-        header_cont.style.display = 'none';
+        header_fix.style.paddingTop = '40px';
         header_nav.style.position = 'fixed';
         header_nav.style.top = '0';
         nav_searchBox.style.display = 'block';
     } else {
-        header_fix.style.paddingTop = '0px';
-        header_cont.style.display = 'flex';
+        header_fix.style.paddingTop = '0';
         header_nav.style.position = '';
         header_nav.style.top = '';
         nav_searchBox.style.display = 'none';
@@ -63,8 +60,8 @@ function setItemIMG() {
         itemImgHolder[i].style.backgroundSize = 'cover';
     }
 }
-function backTotop() {
-    var backBottom = document.getElementsByClassName('backTotop')[0];
+function backToTop() {
+    var backBottom = document.getElementsByClassName('backToTop')[0];
     backBottom.onclick = function () {
         var speedInit = Math.floor((document.documentElement.scrollTop || document.body.scrollTop) / 15);
         var backTimer = setInterval(function () {
